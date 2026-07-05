@@ -1,0 +1,42 @@
+[package]
+name = "material-rs"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+yew = { workspace = true }
+stylist = { workspace = true }
+web-sys = { workspace = true, features = [
+    "Element",
+    "DomRect",
+    "Window",
+    "Performance",
+    "EventTarget",
+    "HtmlElement",
+    "HtmlInputElement",
+    "HtmlDivElement",
+    "HtmlButtonElement",
+    "HtmlLabelElement",
+    "HtmlAnchorElement",
+    "HtmlProgressElement",
+    "MouseEvent",
+    "KeyboardEvent",
+    "FocusEvent",
+    "InputEvent",
+    "AnimationEvent",
+    "Touch",
+    "TouchList",
+    "TouchEvent",
+    "Node",
+    "NodeList",
+    "Document",
+    "CssStyleDeclaration",
+    "ScrollBehavior",
+    "Navigator",
+    "Clipboard",
+    "console",
+] }
+gloo-timers = { workspace = true }
+wasm-bindgen = { workspace = true }
+syntect = { workspace = true }
+material-color-utils = { workspace = true }

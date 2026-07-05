@@ -1,0 +1,13 @@
+[package]
+name = "material-rs-documentation"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+yew = { workspace = true }
+material-rs = { workspace = true }
+stylist = { workspace = true }
+web-sys = { workspace = true }
+wasm-bindgen = { workspace = true }
+
+yew-router = "0.20.0"
