@@ -59,7 +59,7 @@ jobs:
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          command: pages deploy dist --project-name=material-rs
+          command: deploy
 
   # ── Job 3: Publish crate to crates.io ──
   publish-crate:
@@ -80,6 +80,9 @@ jobs:
             target
           key: publish-${{ runner.os }}-cargo-${{ hashFiles('**/Cargo.lock') }}
           restore-keys: publish-${{ runner.os }}-cargo-
+
+      - name: Copy README to core package
+        run: cp README.md packages/core/README.md
 
       - name: Publish to crates.io
         env:
