@@ -653,7 +653,7 @@ dependencies = [
 
 [[package]]
 name = "material-rs"
-version = "0.1.1"
+version = "0.1.2"
 dependencies = [
  "gloo-timers 0.4.0",
  "material-color-utils",

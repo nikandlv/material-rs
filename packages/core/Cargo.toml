@@ -1,6 +1,6 @@
 [package]
 name = "material-rs"
-version = "0.1.1"
+version = "0.1.2"
 edition = "2024"
 description = "Material Design 3 Expressive component library for Rust and Yew"
 license = "MIT"
